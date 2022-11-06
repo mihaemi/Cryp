@@ -1,0 +1,57 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.cl-telegram-link {
+    text-indent: -9000px;
+    background-image: url(telegram-link.png);
+    background-repeat: no-repeat;
+    width: 40px;
+}
+
+.navbar-collapse {
+    flex-grow: unset !important;
+}
+
+.dropdown-menu {
+    min-width: 50px !important;
+    list-style: none;
+    border-color: transparent;
+   
+}
+
+.text-logo {
+    margin-left: 12px;
+    vertical-align: -5px;
+
+}
+.navbar-brand:hover {
+    opacity: 0.5;
+    transition: opacity 1s;
+}
+
+.button:hover {
+    background-color: #72ecdb;
+    transition: 1s;
+}
+
+.underline {
+    position: relative;
+    text-decoration: none;
+}
+
+.underline::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: black;
+    transition: transform 0.25s;
+    transform: scaleX(0);
+}
+
+.underline:hover::after {
+    transform: scaleX(1);
+}
