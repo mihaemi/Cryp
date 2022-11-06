@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  height: 1em auto;
+}
+
+.section--roadmap {
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+}
+.timeline li {
+  width: 20%;
+  margin-bottom: 3em;
+  padding: 0 2%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.timeline li:nth-child(5n+1) h4::before {
+  display: none;
+}
+.timeline li.current h4::before {
+  border-bottom-style: solid;
+}
+.timeline li.current h4::after {
+  background: radial-gradient(rgb(235, 159, 27) 0, rgb(235, 159, 27) 30%, transparent 30%);
+}
+.timeline li.past h4::before {
+  border-bottom-style: solid;
+}
+.timeline li.past h4::after {
+  background: blue;
+}
+.timeline li h4::after {
+  display: block;
+  content: "";
+  width: 0.8em;
+  height: 0.8em;
+  border: 1px solid blue;
+  border-radius: 100%;
+  margin: 1em auto 3em auto;
+}
+.timeline li h4::before {
+  display: block;
+  content: "";
+  border-bottom: 1px dashed blue;
+  transform: translateY(2.7em) translateX(-60%);
+  width: 118%;
+}/*# sourceMappingURL=roadmap.css.map */
